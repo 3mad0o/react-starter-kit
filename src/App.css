@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+
+.phone-input-wrapper .PhoneInputInput {
+  @apply border-2 border-gray-300 rounded-md p-2 
+         focus:outline-none focus:ring-2 focus:ring-gray-200;
+}
+
+.phone-input-wrapper .PhoneInputCountry {
+  @apply mr-2;
+}
+
+
+
+/* ENTER */
+.modal-enter {
+  @apply opacity-0;
+}
+
+.modal-enter-active {
+  @apply opacity-100 transition-opacity duration-300 ease-out;
+}
+
+.modal-enter-done {
+  @apply opacity-100;
+}
+
+/* MODAL CONTENT animation */
+.modal-content-enter {
+  @apply opacity-0 scale-95;
+}
+
+.modal-content-enter-active {
+  @apply opacity-100 scale-100 transition-all duration-300 ease-out;
+}
+
+/* EXIT */
+.modal-exit {
+  @apply opacity-100;
+}
+
+.modal-exit-active {
+  @apply opacity-0 transition-opacity duration-200 ease-in;
+}
+
+.modal-content-exit {
+  @apply opacity-100 scale-100;
+}
+
+.modal-content-exit-active {
+  @apply opacity-0 scale-95 transition-all duration-200 ease-in;
+}
+
+
+
+
+
+/* BACKDROP */
+.bottom-sheet-enter {
+  @apply opacity-0;
+}
+
+.bottom-sheet-enter-active {
+  @apply opacity-100 transition-opacity duration-300 ease-out;
+}
+
+.bottom-sheet-exit {
+  @apply opacity-100;
+}
+
+.bottom-sheet-exit-active {
+  @apply opacity-0 transition-opacity duration-200 ease-in;
+}
+
+/* SHEET CONTENT */
+.bottom-sheet-content-enter {
+  @apply translate-y-full;
+}
+
+.bottom-sheet-content-enter-active {
+  @apply translate-y-0 transition-transform duration-300 ease-out;
+}
+
+.bottom-sheet-content-exit {
+  @apply translate-y-0;
+}
+
+.bottom-sheet-content-exit-active {
+  @apply translate-y-full transition-transform duration-200 ease-in;
+}
+
+
+
+
+.accordion-content-enter {
+  max-height: 0;
+  opacity: 0;
+}
+
+.accordion-content-enter-active {
+  max-height: 500px; /* or any expected content height */
+  opacity: 1;
+  transition: max-height 300ms ease, opacity 300ms ease;
+}
+
+.accordion-content-exit {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.accordion-content-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 300ms ease, opacity 300ms ease;
+}
