@@ -1,23 +1,27 @@
+# ⚡ React Starter Kit
+
+A clean, scalable, and production-ready React + TypeScript starter kit designed to speed up development and provide reusable UI components for modern applications.
 
 ---
 
-# 💡 نصيحة احترافية
+## 🚀 Tech Stack
 
-بما إنك Full-time Laravel Developer وبدك تبني income من React + Laravel 👌
-
-اعمل:
-
-- نسخة **Basic Starter**
-- نسخة **Pro Starter (Paid)** فيها:
-  - Auth template
-  - API service layer
-  - Axios config
-  - Error handler
-  - Protected routes
-  - Layout system
-
-ممكن تتحول لمنتج تبيعه 🔥
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Transition Group
+- Context API
 
 ---
 
-إذا بدك أعملك README أقوى بمستوى GitHub trending projects مع badges وصورة banner خبرني 😉
+## ✨ Features
+
+- Reusable and modular UI components  
+- Fully typed with TypeScript  
+- Animated Modal and transitions  
+- Custom Alert system (Confirm / Cancel support)  
+- Clean and scalable folder structure  
+- Ready for production scaling  
+
+---
