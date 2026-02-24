@@ -14,8 +14,10 @@ export const FileUpload = ({ name, placeholder,onchange,...rest }:CustomFileProp
   const fileInputRef = useRef(null); // 👈 create a ref
 
   const handleFileChange = (e:React.ChangeEvent<HTMLInputElement, HTMLInputElement>) => {
-    const file = e.target.files[0];
-    setPreview(URL.createObjectURL(file));
+    const file = e.target.files?.[0];
+    if(file) {
+      setPreview(URL.createObjectURL(file));
+    }
     if(onchange){
       onchange(e)
     }

@@ -1,4 +1,3 @@
-import React from 'react'
 import type { StylesConfig } from 'react-select'
 import Select, { type Props as SelectProps } from 'react-select'
 

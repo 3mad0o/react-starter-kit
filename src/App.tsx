@@ -22,9 +22,9 @@ import { useAlert } from "./contexts/AlertContext";
 function App() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [isBotttomSheetOpen, setIsBottomSheetOpen] = useState<boolean>(false);
-  const alert = useAlert();
+  const alertDialog = useAlert();
   const showAlert = () => {
-    alert
+    alertDialog
       .show({
         type: "warning",
         message: "Are You Sure You Want To Delete?!",
@@ -36,14 +36,14 @@ function App() {
         console.log('conf',confirmed);
         
         if (confirmed) {
-          alert.show({
+          alertDialog.show({
             type: "success",
             message: "Deleted Successfully!",
             icon: "success",
             confirmText: "OK",
           });
         } else {
-          alert.show({
+          alertDialog.show({
             type: "info",
             message: "Action Cancelled!",
             icon: "info",

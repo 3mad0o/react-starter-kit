@@ -1,4 +1,4 @@
-import React, { use, useEffect, type JSX } from "react";
+import React, { useEffect, type JSX } from "react";
 
 type DropdownProps = {
   title: JSX.Element | string;
